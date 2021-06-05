@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - bernd-eilers/jx3-kubernetes
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.service.fms.local
 kind: ConfigMap
 metadata:
   creationTimestamp: null

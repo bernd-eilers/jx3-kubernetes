@@ -24,8 +24,8 @@ jxRequirements:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
     clusterName: kind
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - bei
+    environmentGitOwner: bernd-eilers
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -36,9 +36,12 @@ jxRequirements:
     owner: bernd-eilers
     repository: jx3-kubernetes
   - key: staging
+  - key: itest
+  - key: prodtest
+  - key: pat
   - key: production
   ingress:
-    domain: change.me
+    domain: service.fms.local
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -kuberhealthy.
@@ -47,8 +50,8 @@ jxRequirements:
       enabled: false
       production: false
   pipelineUser:
-    username: mygituser
-  repository: bucketrepo
+    username: bei
+  repository: nexus
   secretStorage: local
   vault: {}
   webhook: lighthouse

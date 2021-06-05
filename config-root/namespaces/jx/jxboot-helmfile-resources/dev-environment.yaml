@@ -26,9 +26,9 @@ spec:
       kind: Scheduler
       name: jx-meta-pipeline
     dockerRegistryOrg: ""
-    envOrganisation: todo
+    envOrganisation: bernd-eilers
     gitServer: https://github.com
     kubeProvider: "kubernetes"
-    pipelineUsername: "mygituser"
+    pipelineUsername: "bei"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler

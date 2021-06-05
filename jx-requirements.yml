@@ -17,7 +17,7 @@ spec:
     registry: ghcr.io
   environments:
   - key: dev
-    owner: bei
+    owner: bernd-eilers
     repository: jx3-kubernetes
   - key: staging
   - key: itest
@@ -25,7 +25,7 @@ spec:
   - key: pat
   - key: production
   ingress:
-    domain: "service.fms.local"
+    domain: service.fms.local
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
@@ -33,7 +33,6 @@ spec:
       email: ""
       enabled: false
       production: false
-  repository: nexus
   pipelineUser:
     username: bei
   repository: nexus
