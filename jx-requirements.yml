@@ -8,8 +8,8 @@ spec:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
     clusterName: kind
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - bernd-eilers
+    environmentGitOwner: bernd-eilers
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -18,16 +18,19 @@ spec:
   environments:
   - key: dev
   - key: staging
+  - key: itest
+  - key: prodtest
+  - key: pat
   - key: production
   ingress:
-    domain: ""
+    domain: "service.fms.local"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
-  repository: bucketrepo
+  repository: nexus
   secretStorage: local
   vault: {}
   webhook: lighthouse
